@@ -1,0 +1,60 @@
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url("./ARY00064.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.model-container {
+    width: 40%;
+    /* background-color: white; */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 800px;
+    
+}
+
+.model {
+    display: none; /* Sembunyikan semua model secara default */
+    flex-direction: column;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+}
+
+.model.active {
+    display: flex; /* Hanya model aktif yang ditampilkan */
+    opacity: 1
+    
+}
+
+.portrait-photo {
+    width: auto;
+    height: 60vh; /* Tinggi portrait tetap */
+    max-height: 60vh;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    
+}
+
+.model p {
+    font-size: 1rem;
+    color: #555;
+    padding: 10px;
+    max-width: 90%;
+    line-height: 1.5;
+}
+
